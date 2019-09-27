@@ -1,12 +1,8 @@
 import React from 'react'
 import { connect } from 'react-redux'
-
-import { toggleCartHidden } from '../../redux/cart/cart.actons'
-
+import { toggleCartHidden } from '../../redux/cart/cart.actions'
 import { ReactComponent as ShoppingIcon } from '../../assets/shopping-bag.svg'
-
 import './cart-icon.scss'
-import { dispatch } from 'rxjs/internal/observable/range'
 
 const CartIcon = ({ toggleCartHidden }) => (
   <div className="cart-icon" onClick={toggleCartHidden}>
