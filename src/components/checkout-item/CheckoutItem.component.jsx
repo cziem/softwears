@@ -1,6 +1,6 @@
 import React from 'react'
 
-import './checkoutItem.scss'
+import './checkoutItem.styles.scss'
 
 const CheckoutItem = ({ cartItem: { name, imageUrl, price, quantity } }) => (
   <div className="checout-item">

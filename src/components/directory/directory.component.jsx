@@ -1,11 +1,11 @@
 import React, { Component } from 'react'
 
-import MenuItem from '../menu-item/menu-item'
-import './directory.scss'
+import MenuItem from '../menu-item/menu-item.component'
+import './directory.styles.scss'
 
 class Directory extends Component {
   constructor() {
-    super()
+    super();
 
     this.state = {
       sections: [

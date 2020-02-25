@@ -5,14 +5,14 @@ import { createStructuredSelector } from 'reselect';
 import './App.css';
 
 import HomePage from './pages/homepage/homepage';
-import ShopPage from './pages/shop/shop'
-import Header from './components/header/header'
-import CheckoutPage from './components/checkout/Checkout'
+import ShopPage from './pages/shop/shop';
+import Header from './components/header/header.component';
+import CheckoutPage from './components/checkout/Checkout.component';
 
-import SignInRegisterPage from './pages/auth/singInRegister'
-import { auth, createUserProfileDocument } from './firebase/firebase.utils'
-import { setCurrentUser } from './redux/user/user.actions'
-import { selectCurrentUser } from './redux/user/user.selector'
+import SignInRegisterPage from './pages/auth/singInRegister';
+import { auth, createUserProfileDocument } from './firebase/firebase.utils';
+import { setCurrentUser } from './redux/user/user.actions';
+import { selectCurrentUser } from './redux/user/user.selector';
 
 class App extends Component {
   unsubscribeFromAuth = null;
