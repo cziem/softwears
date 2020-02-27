@@ -5,7 +5,7 @@ import CollectionPreview from '../../components/collection-preview/collectionPre
 
 class ShopPage extends Component {
   constructor(props) {
-    super(props)
+    super(props);
 
     this.state = {
       collections: SHOP_DATA
@@ -13,7 +13,7 @@ class ShopPage extends Component {
   }
 
   render() {
-    const { collections } = this.state
+    const { collections } = this.state;
     return (
       <div className="shop-page">
         {
@@ -26,4 +26,4 @@ class ShopPage extends Component {
   }
 }
 
-export default ShopPage
+export default ShopPage;

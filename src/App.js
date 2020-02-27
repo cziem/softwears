@@ -5,7 +5,7 @@ import { createStructuredSelector } from 'reselect';
 import './App.css';
 
 import HomePage from './pages/homepage/homepage';
-import ShopPage from './pages/shop/shop';
+import ShopPage from './pages/shop/shop.component';
 import Header from './components/header/header.component';
 import CheckoutPage from './components/checkout/Checkout.component';
 
@@ -57,6 +57,7 @@ class App extends Component {
   }
 }
 
+// To restrict loggedIn users from hitting the sign-in page
 const mapStateToProps = createStructuredSelector({
   currentUser: selectCurrentUser
 });
