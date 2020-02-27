@@ -1,11 +1,11 @@
 import React from 'react'
 import { connect } from 'react-redux'
 import { createStructuredSelector } from 'reselect'
-import CheckoutItem from '../cart-item/cartItem'
+import CheckoutItem from '../cart-item/cartItem.component'
 
 import { selectCartItems, selectCartTotal } from '../../redux/cart/cart.selectors'
 
-import './checkout.scss'
+import './checkout.styles.scss'
 
 const checkoutBlock = [
   "Product", "Description", "Quantity", "Price", "Remove"
