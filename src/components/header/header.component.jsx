@@ -33,7 +33,6 @@ const Header = ({ currentUser, hidden }) => (
       }
       <CartIcon />
     </div>
-    {console.log('hide?', hidden)}
     {
       !hidden ? <CartDropdown /> : null
     }

@@ -5,7 +5,7 @@ import CustomButton from '../custom-button/customButton.component'
 import './collectionItem.styles.scss'
 
 const CollectionItem = ({ item, addItem }) => {
-  const { imageUrl, name, price } = item
+  const { imageUrl, name, price } = item;
 
   return (
     <div className="collection-item">
@@ -19,10 +19,10 @@ const CollectionItem = ({ item, addItem }) => {
       <CustomButton onClick={() => addItem(item)} inverted>ADD TO CART</CustomButton>
     </div>
   )
-}
+};
 
 const mapDispatchToProps = dispatch => ({
   addItem: item => dispatch(addItemToCart(item))
-})
+});
 
 export default connect(null, mapDispatchToProps)(CollectionItem)
